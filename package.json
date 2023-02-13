@@ -15,5 +15,11 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^7.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootswatch": "^5.2.3",
+    "react-tsparticles": "^2.9.3",
+    "tsparticles": "^2.9.3"
   }
 }

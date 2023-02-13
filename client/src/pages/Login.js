@@ -49,25 +49,40 @@ const Login = () => {
       )
     }
     return (
-      <form onSubmit={handleFormSubmit}>
-        <input
-          placeholder="Your email"
-          name="email"
-          type="email"
-          value={formState.email}
-          onChange={handleChange}
-        />
-        <input
-          placeholder="******"
-          name="password"
-          type="password"
-          value={formState.password}
-          onChange={handleChange}
-        />
-        <button type="submit">
-          Submit
-        </button>
-      </form>
+      <div className='container min-vh-100'>
+        <div className='card border-info m-3 row d-flex'>
+          <h2 className='text-center mt-1 col-12'>Login</h2>
+          <form className='' onSubmit={handleFormSubmit}>
+            <div className="form-group">
+              <div className="form-label m-3">
+                <input
+                  placeholder="name@example.com"
+                  name="email"
+                  type="email"
+                  className='form-control'
+                  id='floatingInput'
+                  value={formState.email}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className='form-group m-3'>
+                <input
+                  placeholder="******"
+                  name="password"
+                  type="password"
+                  className='form-control'
+                  id='floatingInput'
+                  value={formState.password}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className='form-group m-3 d-flex justify-content-center'>
+                <button type="submit" className="btn btn-primary mb-3 col-6">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     );
   };
 
