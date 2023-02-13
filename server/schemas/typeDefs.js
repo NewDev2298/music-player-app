@@ -13,11 +13,25 @@ const typeDefs = gql`
     user: User
   }
 
+  type Playlist {
+    items: [Item]
+  }
+
+  type Item {
+    id: ID
+    href: String
+    external_urls: ExternalUrl
+  }
+
+  type ExternalUrl {
+    spotify: String
+  }
   type Query {
     users: [User]!
     user(id: ID!): User
     searchUsers(term: String!): [User]!
     me: User
+    playlist: Playlist
   }
 
   type Mutation {
