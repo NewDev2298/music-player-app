@@ -2,6 +2,10 @@ const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
+const axios = require('axios');
+require('dotenv').config();
+const API_KEY = process.env.REACT_APP_SPOTIFY_TOKEN;
+
 const resolvers = {
   Query: {
     searchUsers: async (_parent, args) => {
@@ -36,6 +40,22 @@ const resolvers = {
         return User.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError('You need to be logged in!');
+    },
+    playlist: async (_, args, context) => {
+      //https://api.spotify.com/v1/me/playlists
+      const { data } = await axios.get(
+        'https://api.spotify.com/v1/me/playlists',
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': API_KEY
+          }
+        }
+      );
+
+      console.log(data);
+
+      return data;
     },
   },
 
