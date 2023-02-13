@@ -1,10 +1,10 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
 const { signToken } = require('../utils/auth');
+
 const axios = require('axios');
 require('dotenv').config();
 const API_KEY = process.env.REACT_APP_SPOTIFY_TOKEN;
-
 
 const resolvers = {
   Query: {

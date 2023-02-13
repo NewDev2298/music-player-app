@@ -26,7 +26,6 @@ const typeDefs = gql`
   type ExternalUrl {
     spotify: String
   }
-
   type Query {
     users: [User]!
     user(id: ID!): User
