@@ -18,6 +18,7 @@ const typeDefs = gql`
     user(id: ID!): User
     searchUsers(term: String!): [User]!
     me: User
+    playlist: Playlist
   }
 
   type Mutation {
