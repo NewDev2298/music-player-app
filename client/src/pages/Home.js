@@ -38,27 +38,107 @@ const Home = () => {
 
   return (
     <main>
-      <form onSubmit={handleSubmit}>
-        <label>Search</label>
-        <input
-          type="text"
-          ref={inputRef}
-        />
-        <button type="submit">Search</button>
-      </form>
-      <div>
-        <UserList
-          users={searchResults}
-          title="Search Results"
-        />
+    <div className='container min-vh-100'>
+      <div className='row d-flex justify-content-center'>
+        <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3 '>
+          <h3 className='card-header'>Card Header</h3>
+          <div className='card-body'>
+            <h5 className='card-title'>Special title treatment</h5>
+            <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+          </div>
+          <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+          </img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <div class="card-body text-center">
+            <a href="#" class="card-link">Card link</a>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+          <h3 className='card-header'>Card Header</h3>
+          <div className='card-body'>
+            <h5 className='card-title'>Special title treatment</h5>
+            <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+          </div>
+          <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+          </img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <div class="card-body text-center">
+            <a href="#" class="card-link">Card link</a>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+          <h3 className='card-header'>Card Header</h3>
+          <div className='card-body'>
+            <h5 className='card-title'>Special title treatment</h5>
+            <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+          </div>
+          <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+          </img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <div class="card-body text-center">
+            <a href="#" class="card-link">Card link</a>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+          <h3 className='card-header'>Card Header</h3>
+          <div className='card-body'>
+            <h5 className='card-title'>Special title treatment</h5>
+            <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+          </div>
+          <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+          </img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <div class="card-body text-center">
+            <a href="#" class="card-link">Card link</a>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+          <h3 className='card-header'>Card Header</h3>
+          <div className='card-body'>
+            <h5 className='card-title'>Special title treatment</h5>
+            <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+          </div>
+          <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+          </img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <div class="card-body text-center">
+            <a href="#" class="card-link">Card link</a>
+          </div>
+        </div>
+        <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+          <h3 className='card-header'>Card Header</h3>
+          <div className='card-body'>
+            <h5 className='card-title'>Special title treatment</h5>
+            <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+          </div>
+          <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+          </img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+          <div class="card-body text-center">
+            <a href="#" class="card-link">Card link</a>
+          </div>
+        </div>
       </div>
-      <div>
-        {renderUsername()}
-      </div>
-      <div>
-        {renderUserList()}
-      </div>
-    </main>
+    </div>
+  </main>
   );
 };
 

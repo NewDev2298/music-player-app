@@ -95,7 +95,6 @@ const Signup = () => {
 
   return (
     <main>
-      <h4>Sign Up</h4>
       <div>
         {renderForm()}
         {error && <div>{error.message}</div>}

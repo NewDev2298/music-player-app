@@ -8,28 +8,36 @@ function Navbar() {
     event.preventDefault();
     Auth.logout();
   };
-  
+
   if (Auth.loggedIn()) {
     return (
       <>
-        <Link to="/me">
-          {Auth.getProfile().data.username}'s profile
-        </Link>
-        <button onClick={logout}>
-          Logout
-        </button>
+        <nav className='navbar navbar-expand-lg navbar-dark bg-primary mb-5'>
+          <div className='d-flex justify-content-end'>
+            <Link to="/me">
+              {Auth.getProfile().data.username}'s profile
+            </Link>
+            <button className="btn btn-info my-2 my-sm-0" type="submit" onClick={logout}>Logout
+            </button>
+          </div>
+        </nav>
       </>
     );
   }
   // If logged out show login controls
   return (
     <>
-      <Link to="/login">
-        Login
-      </Link>
-      <Link to="/signup">
-        Signup
-      </Link>
+      <nav className='row navbar navbar-expand-lg navbar-dark bg-primary mb-5'>
+        <div className='d-flex align-items-center'>
+          <h1 className='me-auto mx-4'>Music App</h1>
+          <Link to="/login">
+            <button className="btn btn-info mx-2 my-1" type="submit">Login</button>
+          </Link>
+          <Link to="/signup">
+            <button className="btn btn-info mx-2 my-1" type="submit">Signup</button>
+          </Link>
+        </div>
+      </nav>
     </>
   )
 }

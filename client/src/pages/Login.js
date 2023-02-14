@@ -88,7 +88,6 @@ const Login = () => {
 
   return (
     <main>
-      <h4>Login</h4>
       <div>
         {renderForm()}
         {error && <div>{error.message}</div>}
