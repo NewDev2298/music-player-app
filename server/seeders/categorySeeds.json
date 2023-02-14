@@ -1,14 +1,14 @@
 [
     {
-        "category": "Country"
+        "name": "Country"
     },
     {
-        "category": "Pop"
+        "name": "Pop"
     },
     {
-        "category": "Rock & Roll"
+        "name": "Rock & Roll"
     },
     {
-        "category": "Classical Music"
+        "name": "Classical Music"
     }
 ]

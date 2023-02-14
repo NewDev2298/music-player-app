@@ -8,11 +8,10 @@ const songSeeds = require('./songSeeds.json');
 db.once('open', async () => {
   try {
     await User.deleteMany({});
-    await Category.deleteMany({});
     await Songs.deleteMany({});
     await User.create(userSeeds);
-    await Category.create({});
-    await Songs.create({});
+    await Songs.create(songSeeds);
+
   } catch (err) {
     console.error(err);
     process.exit(1);

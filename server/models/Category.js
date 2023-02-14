@@ -5,13 +5,11 @@ const categorySchema = new Schema({
         type: String,
         required: false,
     },
-    description: {
-        type: String,
-    },
-    songs: {
-        type: String,
+    songs: [{
+        type: Schema.Types.ObjectId,
         ref: 'Songs'
-    }
+    },
+],
 });
 
 

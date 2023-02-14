@@ -13,19 +13,18 @@ const typeDefs = gql`
     user: User
   }
 
-  type Category {
-    _id: ID
-    name: String
-    description: String
-    songs: [Song]
-  }
-
   type Song {
     _id: ID
     name: String
     artist: String
     album: String
     video: String
+    category: String
+  }
+
+  input CategoryInput {
+    id: ID
+    category: String
   }
 
   type Query {
@@ -33,8 +32,7 @@ const typeDefs = gql`
     user(id: ID!): User
     searchUsers(term: String!): [User]!
     me: User
-    getAllCategories: [Category]
-    getCategory(id: ID!): Category
+    getSongsByCategory(input: CategoryInput): [Song]
     getAllSong: [Song]
   }
 
