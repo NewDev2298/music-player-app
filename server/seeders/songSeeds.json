@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Flowers",
+        "artist":"Miley Cyrus",
+        "album":"Endless Summer Vacation",
+        "video":"https://www.youtube.com/watch?v=G7KNmW9a75Y&list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU"
+    },
+    {
+        "name":"The Bones",
+        "artist":"Maren Morris",
+        "album":"Girl",
+        "video":"https://www.youtube.com/watch?v=gvPMVKUI9go&list=PLEEyQEShYtdWTyn36cnmbN3obf_f4huaE"
+    },
+    {
+        "name":"Thunderstruck",
+        "artist":"AC/DC",
+        "album":"The Razors Edge",
+        "video":"https://www.youtube.com/watch?v=v2AC41dglnM&list=PL11bOJGTrscPf0RmkzYPbLDGqRrndVEKN"
+    },
+    {
+        "name":"5th symphony",
+        "artist":"Beethoven",
+        "album":"Composed between 1804 and 1808",
+        "video":"https://www.youtube.com/watch?v=_4IRMYuE1hI&list=PL68AC80CBF3649BBB"
+    }
+]
