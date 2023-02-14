@@ -14,24 +14,64 @@ const typeDefs = gql`
   }
 
   type Playlist {
-    items: [Item]
+    items: [ItemPlaylist]
   }
 
-  type Item {
+  type ItemPlaylist {
     id: ID
-    href: String
+    name: String
     external_urls: ExternalUrl
   }
 
   type ExternalUrl {
     spotify: String
   }
+
+  type Category {
+    categories: CategoryData
+  }
+
+  type CategoryData {
+    items: [ItemCategory]
+  }
+
+  type ItemCategory {
+    id: ID
+    name: String
+  }
+
+  type Track {
+    items: [ItemTrack]
+  }
+
+  type ItemTrack {
+    track: SecondTrack
+  }
+
+  type SecondTrack {
+    album: Album
+    preview_url: String
+  }
+
+  type Album {
+    id: ID
+    name: String
+    external_urls: ExternalUrl
+  }
+
+  type CategoryPlaylist {
+    playlists: Playlist
+  }
+
   type Query {
     users: [User]!
     user(id: ID!): User
     searchUsers(term: String!): [User]!
     me: User
     playlist: Playlist
+    categories: Category
+    track: Track
+    category_playlist: CategoryPlaylist
   }
 
   type Mutation {
