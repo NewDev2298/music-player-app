@@ -42,10 +42,12 @@ const Login = () => {
   const renderForm = () => {
     if (data) {
       return (
+        <div className='container min-vh-100'>
         <p>
           Success! You may now head{' '}
           <Link to="/">back to the homepage.</Link>
         </p>
+        </div>
       )
     }
     return (
