@@ -35,38 +35,142 @@ const Profile = () => {
 
   if (!user?.username) {
     return (
-      <h4>
-        You need to be logged in to see this. Use the navigation links above to
-        sign up or log in!
-      </h4>
+      <div className='container min-vh-100'>
+        <div className='row'>
+          <h4 className='col-12 text-center'>
+            You need to be logged in to see this. Use the navigation links above to
+            sign up or log in!
+          </h4>
+        </div>
+      </div>
     );
   }
 
-  const renderUserList = () => {
-    if (usersLoading) return null;
-    // Only renders users who's profile we're not currently viewing
-    const notMeUsers = users.filter(o => o._id !== user._id);
-    return <UserList users={notMeUsers} title="User List" />;
-  };
+  // const renderUserList = () => {
+  //   if (usersLoading) return null;
+  //   // Only renders users who's profile we're not currently viewing
+  //   const notMeUsers = users.filter(o => o._id !== user._id);
+  //   return <UserList users={notMeUsers} title="User List" />;
+  // };
 
-  const renderCurrentUserInfo = () => {
-    if (id) return null;
-    return (
-      <ul>
-        <li>username: {user.username}</li>
-        <li>email: {user.email}</li>
-      </ul>
-    );
-  }
+  // const renderCurrentUserInfo = () => {
+  //   if (id) return null;
+  //   return (
+  //     <ul>
+  //       <li>username: {user.username}</li>
+  //       <li>email: {user.email}</li>
+  //     </ul>
+  //   );
+  // }
 
   return (
-    <div>
+    <div className='container min-vh-100'>
       <div>
-        <h2>
-          Viewing {id ? `${user.username}'s` : 'your'} profile.
+        <h2 className='text-center mb-3'>
+          Viewing {id ? `${user.username}'s` : 'your'} favorited playlists.
         </h2>
-        {renderCurrentUserInfo()}
-        {renderUserList()}
+        <main>
+          <div className='container min-vh-100'>
+            <div className='row d-flex justify-content-center'>
+              <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3 '>
+                <h3 className='card-header'>Card Header</h3>
+                <div className='card-body'>
+                  <h5 className='card-title'>Special title treatment</h5>
+                  <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+                </div>
+                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                </img>
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="card-link">Card link</a>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+                <h3 className='card-header'>Card Header</h3>
+                <div className='card-body'>
+                  <h5 className='card-title'>Special title treatment</h5>
+                  <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+                </div>
+                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                </img>
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="card-link">Card link</a>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+                <h3 className='card-header'>Card Header</h3>
+                <div className='card-body'>
+                  <h5 className='card-title'>Special title treatment</h5>
+                  <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+                </div>
+                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                </img>
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="card-link">Card link</a>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+                <h3 className='card-header'>Card Header</h3>
+                <div className='card-body'>
+                  <h5 className='card-title'>Special title treatment</h5>
+                  <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+                </div>
+                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                </img>
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="card-link">Card link</a>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+                <h3 className='card-header'>Card Header</h3>
+                <div className='card-body'>
+                  <h5 className='card-title'>Special title treatment</h5>
+                  <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+                </div>
+                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                </img>
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="card-link">Card link</a>
+                </div>
+              </div>
+              <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+                <h3 className='card-header'>Card Header</h3>
+                <div className='card-body'>
+                  <h5 className='card-title'>Special title treatment</h5>
+                  <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+                </div>
+                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                </img>
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-body text-center">
+                  <a href="#" class="card-link">Card link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );

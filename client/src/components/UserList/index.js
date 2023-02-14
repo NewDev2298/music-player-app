@@ -3,12 +3,8 @@ import { Link } from 'react-router-dom';
 
 const User = ({ _id, username }) => {
   return (
-    <div key={_id}>
-      <h4>
-        <Link to={`/users/${_id}`}>
-          {username}
-        </Link>
-      </h4>
+    <div>
+      
     </div>
   );
 };
@@ -23,8 +19,7 @@ const UserList = ({ users, title }) => {
 
   return (
     <>
-      <h3>{title}</h3>
-      {renderUsers()}
+
     </>
   );
 };
