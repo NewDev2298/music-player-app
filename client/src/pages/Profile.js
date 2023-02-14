@@ -66,7 +66,7 @@ const Profile = () => {
   return (
     <div className='container min-vh-100'>
       <div>
-        <h2 className='text-center mb-3'>
+        <h2 className='text-center mb-4'>
           Viewing {id ? `${user.username}'s` : 'your'} favorited playlists.
         </h2>
         <main>
@@ -84,8 +84,10 @@ const Profile = () => {
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                   </p>
                 </div>
-                <div class="card-body text-center">
-                  <a href="#" class="card-link">Card link</a>
+                <div class="card-body text-center d-flex">
+                  <a href="#" class="card-link me-auto align-self-center">Card link</a>
+                  <button className="btn btn-lg btn-info mx-2 my-1" type="submit">Save
+                  </button>
                 </div>
               </div>
               <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
@@ -100,8 +102,10 @@ const Profile = () => {
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                   </p>
                 </div>
-                <div class="card-body text-center">
-                  <a href="#" class="card-link">Card link</a>
+                <div class="card-body text-center d-flex">
+                  <a href="#" class="card-link me-auto align-self-center">Card link</a>
+                  <button className="btn btn-lg btn-info mx-2 my-1" type="submit">Save
+                  </button>
                 </div>
               </div>
               <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
@@ -116,8 +120,10 @@ const Profile = () => {
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                   </p>
                 </div>
-                <div class="card-body text-center">
-                  <a href="#" class="card-link">Card link</a>
+                <div class="card-body text-center d-flex">
+                  <a href="#" class="card-link me-auto align-self-center">Card link</a>
+                  <button className="btn btn-lg btn-info mx-2 my-1" type="submit">Save
+                  </button>
                 </div>
               </div>
               <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
@@ -132,8 +138,10 @@ const Profile = () => {
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                   </p>
                 </div>
-                <div class="card-body text-center">
-                  <a href="#" class="card-link">Card link</a>
+                <div class="card-body text-center d-flex">
+                  <a href="#" class="card-link me-auto align-self-center">Card link</a>
+                  <button className="btn btn-lg btn-info mx-2 my-1" type="submit">Save
+                  </button>
                 </div>
               </div>
               <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
@@ -148,8 +156,10 @@ const Profile = () => {
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                   </p>
                 </div>
-                <div class="card-body text-center">
-                  <a href="#" class="card-link">Card link</a>
+                <div class="card-body text-center d-flex">
+                  <a href="#" class="card-link me-auto align-self-center">Card link</a>
+                  <button className="btn btn-lg btn-info mx-2 my-1" type="submit">Save
+                  </button>
                 </div>
               </div>
               <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
@@ -164,8 +174,10 @@ const Profile = () => {
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
                   </p>
                 </div>
-                <div class="card-body text-center">
-                  <a href="#" class="card-link">Card link</a>
+                <div class="card-body text-center d-flex">
+                  <a href="#" class="card-link me-auto align-self-center">Card link</a>
+                  <button className="btn btn-lg btn-info mx-2 my-1" type="submit">Save
+                  </button>
                 </div>
               </div>
             </div>

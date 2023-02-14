@@ -12,13 +12,16 @@ function Navbar() {
   if (Auth.loggedIn()) {
     return (
       <>
-        <nav className='navbar navbar-expand-lg navbar-dark bg-primary mb-5'>
-          <div className='d-flex justify-content-end'>
+        <nav className='row navbar navbar-expand-lg navbar-dark bg-primary mb-4'>
+          <div className='d-flex align-items-center'>
+          <h1 className='me-auto mx-4'>Music App</h1>
             <Link to="/me">
-              {Auth.getProfile().data.username}'s profile
+              <button className="btn btn-info mx-2 my-1">{Auth.getProfile().data.username}'s profile</button>
             </Link>
-            <button className="btn btn-info my-2 my-sm-0" type="submit" onClick={logout}>Logout
-            </button>
+            <Link to="/">
+              <button className="btn btn-info mx-2 my-1">Home</button>
+            </Link>
+            <button className="btn btn-info mx-2 my-1" type="submit" onClick={logout}>Logout</button>
           </div>
         </nav>
       </>
@@ -27,7 +30,7 @@ function Navbar() {
   // If logged out show login controls
   return (
     <>
-      <nav className='row navbar navbar-expand-lg navbar-dark bg-primary mb-5'>
+      <nav className='row navbar navbar-expand-lg navbar-dark bg-primary mb-4'>
         <div className='d-flex align-items-center'>
           <h1 className='me-auto mx-4'>Music App</h1>
           <Link to="/login">
