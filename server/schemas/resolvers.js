@@ -39,14 +39,11 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    getAllCategories: async () => {
-      return await Category.find();
-    },
-    getCategory: async (_parent, args) => {
-      return await Category.findById(args.id);
+    getSongsByCategory: async (_parent, args) => {
+      return await Songs.findById(args.category);
     },
     getAllSong: async () => {
-      return await Song.find();
+      return await Songs.find();
     },
   },
 

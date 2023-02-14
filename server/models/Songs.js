@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const Category = require('./Category');
 
 const songsSchema = new Schema({
     name: {
@@ -13,6 +14,9 @@ const songsSchema = new Schema({
     },
     video: {
         type: String,
+    },
+    category: {
+        type: String
     }
 });
 
