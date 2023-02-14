@@ -1,10 +1,8 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Category, Songs } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const axios = require('axios');
-require('dotenv').config();
-const API_KEY = process.env.REACT_APP_SPOTIFY_TOKEN;
 
 const resolvers = {
   Query: {
@@ -41,69 +39,14 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    playlist: async (_, args, context) => {
-      //https://api.spotify.com/v1/me/playlists
-      const { data } = await axios.get(
-        'https://api.spotify.com/v1/me/playlists',
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': API_KEY
-          }
-        }
-      );
-
-      console.log(data);
-
-      return data;
+    getAllCategories: async () => {
+      return await Category.find();
     },
-    categories: async (_, args, context) => {
-      //https://api.spotify.com/v1/browse/categories
-      const { data } = await axios.get(
-        'https://api.spotify.com/v1/browse/categories',
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': API_KEY
-          }
-        }
-      );
-
-      console.log(data);
-
-      return data;
+    getCategory: async (_parent, args) => {
+      return await Category.findById(args.id);
     },
-    category_playlist: async (_, args, context) => {
-      //https://api.spotify.com/v1/browse/categories/[categoryID]/playlists
-      const { data } = await axios.get(
-        'https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAXlCG6QvYQ4/playlists',
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': API_KEY
-          }
-        }
-      );
-
-      console.log(data);
-
-      return data;
-    },
-    track: async (_, args, context) => {
-      //https://api.spotify.com/v1/playlists/3[playlistId]/tracks
-      const { data } = await axios.get(
-        'https://api.spotify.com/v1/playlists/37i9dQZF1DXcWBRiUaG3o5/tracks',
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': API_KEY
-          }
-        }
-      );
-
-      console.log(data);
-
-      return data;
+    getAllSong: async () => {
+      return await Song.find();
     },
   },
 
