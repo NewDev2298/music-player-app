@@ -57,6 +57,54 @@ const resolvers = {
 
       return data;
     },
+    categories: async (_, args, context) => {
+      //https://api.spotify.com/v1/browse/categories
+      const { data } = await axios.get(
+        'https://api.spotify.com/v1/browse/categories',
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': API_KEY
+          }
+        }
+      );
+
+      console.log(data);
+
+      return data;
+    },
+    category_playlist: async (_, args, context) => {
+      //https://api.spotify.com/v1/browse/categories/[categoryID]/playlists
+      const { data } = await axios.get(
+        'https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAXlCG6QvYQ4/playlists',
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': API_KEY
+          }
+        }
+      );
+
+      console.log(data);
+
+      return data;
+    },
+    track: async (_, args, context) => {
+      //https://api.spotify.com/v1/playlists/3[playlistId]/tracks
+      const { data } = await axios.get(
+        'https://api.spotify.com/v1/playlists/37i9dQZF1DXcWBRiUaG3o5/tracks',
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': API_KEY
+          }
+        }
+      );
+
+      console.log(data);
+
+      return data;
+    },
   },
 
   Mutation: {
