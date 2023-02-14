@@ -13,54 +13,19 @@ const typeDefs = gql`
     user: User
   }
 
-  type Playlist {
-    items: [ItemPlaylist]
-  }
-
-  type ItemPlaylist {
-    id: ID
-    name: String
-    external_urls: ExternalUrl
-  }
-
-  type ExternalUrl {
-    spotify: String
-  }
-
   type Category {
-    categories: CategoryData
-  }
-
-  type CategoryData {
-    items: [ItemCategory]
-  }
-
-  type ItemCategory {
-    id: ID
+    _id: ID
     name: String
+    description: String
+    songs: [Song]
   }
 
-  type Track {
-    items: [ItemTrack]
-  }
-
-  type ItemTrack {
-    track: SecondTrack
-  }
-
-  type SecondTrack {
-    album: Album
-    preview_url: String
-  }
-
-  type Album {
-    id: ID
+  type Song {
+    _id: ID
     name: String
-    external_urls: ExternalUrl
-  }
-
-  type CategoryPlaylist {
-    playlists: Playlist
+    artist: String
+    album: String
+    video: String
   }
 
   type Query {
@@ -68,10 +33,9 @@ const typeDefs = gql`
     user(id: ID!): User
     searchUsers(term: String!): [User]!
     me: User
-    playlist: Playlist
-    categories: Category
-    track: Track
-    category_playlist: CategoryPlaylist
+    getAllCategories: [Category]
+    getCategory(id: ID!): Category
+    getAllSong: [Song]
   }
 
   type Mutation {
