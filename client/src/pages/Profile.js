@@ -7,6 +7,7 @@ import Auth from '../utils/auth';
 import { QUERY_USERS, QUERY_USER, QUERY_ME } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
+import Card from '../components/Card';
 
 const Profile = () => {
   const { id } = useParams();
@@ -73,7 +74,7 @@ const Profile = () => {
         <h2 className='text-center mb-4'>
           Viewing {id ? `${user.username}'s` : 'Your'} Favorited Playlists.
         </h2>
-        <main>
+        {/* <main>
           <div className='container min-vh-100'>
             <div className='row d-flex justify-content-center'>
               <div className='col-lg-3 col-md-5 col-sm-12 mx-1 card border-info mb-3'>
@@ -173,6 +174,11 @@ const Profile = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </main> */}
+        <main>
+          <div>
+            <Card />
           </div>
         </main>
       </div>
