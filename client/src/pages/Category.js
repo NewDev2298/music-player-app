@@ -45,42 +45,53 @@ const Category = () => {
         );
     }
 
-    const handleClick = (id) => {
+    const handleClick = async (id) => {
         setFavorites(favorites => {
             if (favorites.includes(id)) {
                 return favorites.filter(fav => fav !== id);
             }
             return [...favorites, id];
         });
+
+        // const saveSong = favorites.find((song) => song._id === id);
+
+        // const token = Auth.loggedIn() ? Auth.getToken() : null;
+
+        // if (!token) {
+        //     return false;
+        // }
+
+        // await saveSong({ variables: { songId: _id } });
+
     };
 
     return (
         <div className='container min-vh-100'>
             <h2 className='text-center mb-3'>
-                Viewing placeholder Category Songs.
+                Viewing {data.category} Category Songs.
             </h2>
             <div className="row">
-            {songs.map((song) => (
-                <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
-                    <h3 className='card-header'>{song.name}</h3>
-                    <div className='card-body'>
-                        <h5 className='card-title text-center'>Artist: {song.artist}</h5>
-                        <h6 className='card-subtitle text-muted text-end'>{song.category}</h6>
+                {songs.map((song) => (
+                    <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+                        <h3 className='card-header'>{song.name}</h3>
+                        <div className='card-body'>
+                            <h5 className='card-title text-center'>Artist: {song.artist}</h5>
+                            <h6 className='card-subtitle text-muted text-end'>{song.category}</h6>
+                        </div>
+                        <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                        </img>
+                        <div className="card-body">
+                            <p className="card-text text-center">Album: {song.album}
+                            </p>
+                        </div>
+                        <div className="card-body d-flex  ">
+                            <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
+                            <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => handleClick(song._id)}>
+                                {favorites.includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
+                            </button>
+                        </div>
                     </div>
-                    <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
-                    </img>
-                    <div className="card-body">
-                        <p className="card-text text-center">Album: {song.album}
-                        </p>
-                    </div>
-                    <div className="card-body d-flex  ">
-                        <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
-                        <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => handleClick(song._id)}>
-                            {favorites.includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
-                        </button>
-                    </div>
-                </div>
-            ))}
+                ))}
             </div>
         </div >
     );

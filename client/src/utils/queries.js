@@ -1,13 +1,23 @@
 import { gql } from '@apollo/client';
 
 export const QUERY_USERS = gql`
-  query users {
-    users {
+  query User {
+  users {
+    _id
+    email
+    songCount
+    username
+    password
+    songList {
       _id
-      username
-      email
+      album
+      artist
+      category
+      name
+      video
     }
   }
+}
 `;
 
 export const SEARCH_USERS = gql`
@@ -21,23 +31,42 @@ export const SEARCH_USERS = gql`
 `;
 
 export const QUERY_USER = gql`
-  query user($id: ID!) {
-    user(id: $id) {
+  query User($userId: ID!) {
+  user(id: $userId) {
+    _id
+    email
+    password
+    songCount
+    songList {
       _id
-      username
-      email
+      album
+      artist
+      category
+      video
+      name
     }
   }
+}
 `;
 
 export const QUERY_ME = gql`
-  query me {
-    me {
+query Me {
+  me {
+    _id
+    email
+    songCount
+    songList {
       _id
-      username
-      email
+      album
+      artist
+      category
+      name
+      video
     }
+    username
+    password
   }
+}
 `;
 
 export const QUERY_ALL_SONGS = gql`
@@ -52,29 +81,25 @@ export const QUERY_ALL_SONGS = gql`
     }
   }
 `;
+
 export const QUERY_ALL_CATEGORIES = gql`
-  query getAllCategories {
-    getAllCategories {
-      _id
-      name
-      songs {
-        album
-        artist
-        name
-        video
-      }
-    }
+query GetAllCategories {
+  getAllCategories {
+    _id
+    name
   }
+}
 `;
+
 export const QUERY_A_CATEGORY = gql`
-  query getSongsByCategory($term: String!) {
-    getSongsByCategory(term: $term) {
-      _id
-      album
-      artist
-      category
-      name
-      video
-    }
+query GetSongsByCategory($term: String!) {
+  getSongsByCategory(term: $term) {
+    _id
+    album
+    artist
+    category
+    name
+    video
   }
+}
 `;
