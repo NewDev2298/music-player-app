@@ -9,6 +9,9 @@ const songsSchema = new Schema({
     artist: {
         type: String,
     },
+    cover: {
+        type: String,
+    },
     album: {
         type: String,
     },

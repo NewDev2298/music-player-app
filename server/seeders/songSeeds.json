@@ -1,45 +1,18 @@
 [
     {
-        "name":"Flowers",
-        "artist":"Miley Cyrus",
-        "album":"Endless Summer Vacation",
-        "video":"https://www.youtube.com/watch?v=G7KNmW9a75Y&list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU",
-        "category": "Pop"
-    },
-    {
-        "name":"The Bones",
-        "artist":"Maren Morris",
-        "album":"Girl",
-        "video":"https://www.youtube.com/watch?v=gvPMVKUI9go&list=PLEEyQEShYtdWTyn36cnmbN3obf_f4huaE",
-        "category": "Country"
-    },
-    {
-        "name":"Thunderstruck",
-        "artist":"AC/DC",
-        "album":"The Razors Edge",
-        "video":"https://www.youtube.com/watch?v=v2AC41dglnM&list=PL11bOJGTrscPf0RmkzYPbLDGqRrndVEKN",
-        "category": "Rock"
-    },
-    {
         "name":"Ultra Music Festival Miami 2022",
         "artist":"Vini Vici",
+        "cover":"vini-vici.png",
         "album":"Ultra Music Festival Miami 2022",
         "video":"https://youtu.be/krpKMrJ8GjI",
         "category": "Party"
     },
     {
-        "name":"Back in the day",
-        "artist":"Brett Michaels",
-        "album":"Road Trip Anthem",
-        "video":"https://youtu.be/-h44oB6pjU0",
-        "category": "Road-Trip"
-    },
-    {
-        "name":"We are going to the beach",
-        "artist":"Scratch Garden",
-        "album":"Scratch Garden",
-        "video":"https://youtu.be/vEZkJhoUI5w",
-        "category": "Kids"
+        "name":"Flowers",
+        "artist":"Miley Cyrus",
+        "album":"Endless Summer Vacation",
+        "video":"https://www.youtube.com/watch?v=G7KNmW9a75Y&list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU",
+        "category": "Pop"
     },
     {
         "name":"A Thousand Miles",
@@ -63,6 +36,13 @@
         "category": "Rock"
     },
     {
+        "name":"Thunderstruck",
+        "artist":"AC/DC",
+        "album":"The Razors Edge",
+        "video":"https://www.youtube.com/watch?v=v2AC41dglnM&list=PL11bOJGTrscPf0RmkzYPbLDGqRrndVEKN",
+        "category": "Rock"
+    },
+    {
         "name":"My Next Thirty Years",
         "artist":"Tim McGraw",
         "album":"A Place in the Sun",
@@ -70,10 +50,31 @@
         "category": "Country"
     },
     {
+        "name":"The Bones",
+        "artist":"Maren Morris",
+        "album":"Girl",
+        "video":"https://www.youtube.com/watch?v=gvPMVKUI9go&list=PLEEyQEShYtdWTyn36cnmbN3obf_f4huaE",
+        "category": "Country"
+    },
+    {
+        "name":"Back in the day",
+        "artist":"Brett Michaels",
+        "album":"Road Trip Anthem",
+        "video":"https://youtu.be/-h44oB6pjU0",
+        "category": "Road-Trip"
+    },
+    {
         "name":"Baby Shark",
         "artist":"Pinkfong",
         "album":"Baby Shark",
         "video":"https://www.youtube.com/watch?v=R93ce4FZGbc",
+        "category": "Kids"
+    },
+    {
+        "name":"We are going to the beach",
+        "artist":"Scratch Garden",
+        "album":"Scratch Garden",
+        "video":"https://youtu.be/vEZkJhoUI5w",
         "category": "Kids"
     }
 ]
