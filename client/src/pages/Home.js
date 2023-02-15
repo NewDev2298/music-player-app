@@ -7,6 +7,7 @@ import { QUERY_USERS, SEARCH_USERS } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
 import { Link } from 'react-router-dom';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_USERS);
@@ -54,7 +55,7 @@ const Home = () => {
                 <h3 className='card-header'>Pop</h3>
                 <div className='card-body'>
                   <h5 className='card-title'>In the mood for catchy songs?</h5>
-                  <h6 className='card-subtitle text-muted'>Miley Cirus, Harry Styles, Megan Trainor...</h6>
+                  <h6 className='card-subtitle text-muted'>Miley Cyrus, Harry Styles, Megan Trainor...</h6>
                 </div>
                 <img src='../assets/pop.png' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
