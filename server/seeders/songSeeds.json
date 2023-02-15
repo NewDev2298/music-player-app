@@ -40,5 +40,40 @@
         "album":"Scratch Garden",
         "video":"https://youtu.be/vEZkJhoUI5w",
         "category": "Kids"
+    },
+    {
+        "name":"A Thousand Miles",
+        "artist":"Vanessa Carlton",
+        "album":"Be Not Nobody",
+        "video":"https://www.youtube.com/watch?v=Cwkej79U3ek&ab_channel=VanessaCarltonVEVOw",
+        "category": "Pop"
+    },
+    {
+        "name":"Hey Ya!",
+        "artist":"Outkast",
+        "album":"Speakerboxxx/The Love Below",
+        "video":"https://www.youtube.com/watch?v=PWgvGjAhvIw&ab_channel=OutkastVEVO",
+        "category": "Pop"
+    },
+    {
+        "name":"In The End",
+        "artist":"Linkin Park",
+        "album":"Hybrid Theory",
+        "video":"https://www.youtube.com/watch?v=eVTXPUF4Oz4&ab_channel=LinkinPark",
+        "category": "Rock"
+    },
+    {
+        "name":"My Next Thirty Years",
+        "artist":"Tim McGraw",
+        "album":"A Place in the Sun",
+        "video":"https://www.youtube.com/watch?v=fY6L7YMkVhA",
+        "category": "Country"
+    },
+    {
+        "name":"Baby Shark",
+        "artist":"Pinkfong",
+        "album":"Baby Shark",
+        "video":"https://www.youtube.com/watch?v=R93ce4FZGbc",
+        "category": "Kids"
     }
 ]
