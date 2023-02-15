@@ -28,10 +28,10 @@ const resolvers = {
       });
     },
     users: async () => {
-      return User.find();
+      return User.find().populate("songList");
     },
     user: async (_, args) => {
-      return User.findOne({ _id: args.id });
+      return User.findOne({ _id: args.id }).populate("songList");
     },
     me: async (_, _args, context) => {
       if (context.user) {
@@ -84,7 +84,18 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
-    }
+    },
+    saveSong: async (_parent, { songID }, context) => {
+      if (context.user) {
+          const updatedUser = await User.findOneAndUpdate(
+              { _id: context.user._id },
+              { $addToSet: { songList: songID } },
+              { new: true, runValidators: true }
+          );
+          return updatedUser;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+  },
   }
 };
 

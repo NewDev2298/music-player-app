@@ -6,6 +6,8 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    songCount: Int
+    songList:[Song]
   }
 
   type Auth {
@@ -40,6 +42,7 @@ const typeDefs = gql`
   type Mutation {
     addUser(email:String!, username:String!, password:String!): Auth
     login(email:String!, password:String!): Auth
+    saveSong(songID: ID!): User
   }
 `;
 
