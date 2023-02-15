@@ -18,7 +18,11 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minlength: 5,
-  }
+  },
+  songList: [
+    {type: Schema.Types.ObjectId,
+    ref: "Songs"}
+  ],
 });
 
 userSchema.pre('save', async function (next) {
@@ -32,6 +36,10 @@ userSchema.pre('save', async function (next) {
 userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
+
+userSchema.virtual('songCount').get(function () {
+  return this.songList.length;
+});
 
 const User = model('User', userSchema);
 
