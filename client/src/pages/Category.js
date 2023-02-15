@@ -15,7 +15,7 @@ const Category = () => {
 
     const songs = data?.getSongsByCategory || [];
 
-        console.log(data);
+    console.log(data);
 
     // if (Auth.loggedIn() && Auth.getProfile().data._id === id) {
     //     return <Navigate to="/categories" replace />;
@@ -44,29 +44,31 @@ const Category = () => {
 
     return (
         <div className='container min-vh-100'>
-            <div>
-                <h2 className='text-center mb-3'>
-                    Viewing Category Songs.
-                </h2>
-                <main>
-                    <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
-                        <h3 className='card-header'>{songs[0].name}</h3>
-                        <div className='card-body'>
-                            <h5 className='card-title'>{songs[0].name}</h5>
-                            <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
+            {songs.map((song) => (
+                <div>
+                    <h2 className='text-center mb-3'>
+                        Viewing {song.category} Category Songs.
+                    </h2>
+                    <main>
+                        <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
+                            <h3 className='card-header'>{song.name}</h3>
+                            <div className='card-body'>
+                                <h5 className='card-title text-center'>Artist: {song.artist}</h5>
+                                <h6 className='card-subtitle text-muted text-end'>{song.category}</h6>
+                            </div>
+                            <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                            </img>
+                            <div className="card-body">
+                                <p className="card-text text-center">Album: {song.album}
+                                </p>
+                            </div>
+                            <div className="card-body text-center">
+                                <a href={song.video} className="card-link">Youtube</a>
+                            </div>
                         </div>
-                        <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
-                        </img>
-                        <div className="card-body">
-                            <p className="card-text">Test
-                            </p>
-                        </div>
-                        <div className="card-body text-center">
-                            <a href="#" className="card-link">Card link</a>
-                        </div>
-                    </div>
-                </main >
-            </div >
+                    </main >
+                </div >
+            ))}
         </div >
     );
 };
