@@ -39,6 +39,7 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
 export const QUERY_ALL_SONGS = gql`
   query getAllSong {
     getAllSong {
