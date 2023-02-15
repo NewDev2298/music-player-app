@@ -56,7 +56,7 @@ const Home = () => {
                   <h5 className='card-title'>In the mood for catchy songs?</h5>
                   <h6 className='card-subtitle text-muted'>Miley Cirus, Harry Styles, Megan Trainor...</h6>
                 </div>
-                <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/pop.png' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Click for a list of popular songs that will brigthen even a rainy day.
@@ -73,7 +73,7 @@ const Home = () => {
                   <h5 className='card-title'>Woke up feeling wild?</h5>
                   <h6 className='card-subtitle text-muted'>Metallica, Tom Petty, Wiskey Myers...</h6>
                 </div>
-                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/rock.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Let's Rock on! 
@@ -92,7 +92,7 @@ const Home = () => {
                   <h5 className='card-title'>Appreciate little things in life</h5>
                   <h6 className='card-subtitle text-muted'>Zack Bryan, Tyler Childers, Colter Wall...</h6>
                 </div>
-                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/country.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Transport yourself to a country road with this relaxing playlist.
@@ -109,7 +109,7 @@ const Home = () => {
                   <h5 className='card-title'>Celebrate another great day</h5>
                   <h6 className='card-subtitle text-muted'>Dua Lipa, The Weekend...</h6>
                 </div>
-                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/party.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Let's get loud it's party time!
@@ -126,7 +126,7 @@ const Home = () => {
                   <h5 className='card-title'>Ready to hit the doad?</h5>
                   <h6 className='card-subtitle text-muted'>Bruno Mars, Coldplay, Maroon 5...</h6>
                 </div>
-                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/road-trip.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Songs that will make the time fly by.
@@ -143,7 +143,7 @@ const Home = () => {
                   <h5 className='card-title'>Children's songs for every age</h5>
                   <h6 className='card-subtitle text-muted'>Frozen, Beauty and the Beast...</h6>
                 </div>
-                <img src='https://via.placeholder.com/150' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/kids.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Click to know why we don't talk about Bruno.
