@@ -53,7 +53,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/me" element={<Profile />} />
-            <Route path="/categories" element={<Category />} />
+            <Route path="/categories/:terms" element={<Category />} />
             <Route path="/users/:id" element={<Profile />} />
           </Routes>
           <Footer />
