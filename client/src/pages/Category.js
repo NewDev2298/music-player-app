@@ -63,7 +63,7 @@ const Category = () => {
                                 </p>
                             </div>
                             <div className="card-body text-center">
-                                <a href={song.video} className="card-link">Youtube</a>
+                                <a href={song.video} className="card-link" target="_blank">Youtube</a>
                             </div>
                         </div>
                     </main >
