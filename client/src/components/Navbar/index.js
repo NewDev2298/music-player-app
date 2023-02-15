@@ -14,7 +14,9 @@ function Navbar() {
       <>
         <nav className='row navbar navbar-expand-lg navbar-dark bg-primary mb-4'>
           <div className='d-flex align-items-center'>
-          <h1 className='me-auto mx-4'>Music App</h1>
+
+          <h1 className='me-auto mx-4'><Link to="/" style={{ textDecoration: 'none' }}>Music App</Link></h1>
+
             <Link to="/me">
               <button className="btn btn-info mx-2 my-1">{Auth.getProfile().data.username}'s profile</button>
             </Link>
