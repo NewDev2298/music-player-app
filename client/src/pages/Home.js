@@ -6,6 +6,7 @@ import Auth from '../utils/auth';
 import { QUERY_USERS, SEARCH_USERS } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_USERS);
@@ -79,8 +80,10 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="card-body d-flex justify-content-center">
+                  <Link to={`/categories/Rock`}>
                   <button className="btn btn-lg btn-info mx-2 my-1" type="submit">View Songs
                   </button>
+                  </Link>
                 </div>
               </div>
               <div className='col-lg-3 col-md-5 col-sm-12 mx-1 card border-info mb-3'>

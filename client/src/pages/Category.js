@@ -1,21 +1,25 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import { QUERY_USERS, QUERY_USER, QUERY_ME } from '../utils/queries';
+import { QUERY_USERS, QUERY_USER, QUERY_ME, QUERY_A_CATEGORY } from '../utils/queries';
 
 import Auth from "../utils/auth";
 
 const Category = () => {
-    const { id } = useParams();
+    const { terms } = useParams();
 
-    const { loading, data, error } = useQuery(
+    const { loading, data, error } = useQuery(QUERY_A_CATEGORY,
         {
-            variables: { id },
+            variables: { term: terms },
         });
 
-    if (Auth.loggedIn() && Auth.getProfile().data._id === id) {
-        return <Navigate to="/categories" replace />;
-    }
+    const songs = data?.getSongsByCategory || [];
+
+        console.log(data);
+
+    // if (Auth.loggedIn() && Auth.getProfile().data._id === id) {
+    //     return <Navigate to="/categories" replace />;
+    // }
 
     if (loading) {
         return (
@@ -46,9 +50,9 @@ const Category = () => {
                 </h2>
                 <main>
                     <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
-                        <h3 className='card-header'>Category</h3>
+                        <h3 className='card-header'>{songs[0].name}</h3>
                         <div className='card-body'>
-                            <h5 className='card-title'>Test</h5>
+                            <h5 className='card-title'>{songs[0].name}</h5>
                             <h6 className='card-subtitle text-muted'>Support card subtitle</h6>
                         </div>
                         <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
