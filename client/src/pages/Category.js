@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { useQuery } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_USERS, QUERY_USER, QUERY_ME, QUERY_A_CATEGORY } from '../utils/queries';
+import { SAVE_SONG } from '../utils/mutations';
 import { AiFillYoutube, AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 import Auth from "../utils/auth";
@@ -10,6 +11,8 @@ const Category = () => {
     const { terms } = useParams();
 
     const [favorites, setFavorites] = useState([]);
+
+    const [saveSong] = useMutation(SAVE_SONG)
 
     const { loading, data, error } = useQuery(QUERY_A_CATEGORY,
         {
@@ -53,15 +56,8 @@ const Category = () => {
             return [...favorites, id];
         });
 
-        // const saveSong = favorites.find((song) => song._id === id);
 
-        // const token = Auth.loggedIn() ? Auth.getToken() : null;
-
-        // if (!token) {
-        //     return false;
-        // }
-
-        // await saveSong({ variables: { songId: _id } });
+        await saveSong({ variables: { songId: id } });
 
     };
 
