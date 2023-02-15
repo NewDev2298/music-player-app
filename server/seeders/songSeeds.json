@@ -18,13 +18,27 @@
         "artist":"AC/DC",
         "album":"The Razors Edge",
         "video":"https://www.youtube.com/watch?v=v2AC41dglnM&list=PL11bOJGTrscPf0RmkzYPbLDGqRrndVEKN",
-        "category": "Rock & Roll"
+        "category": "Rock"
     },
     {
-        "name":"5th symphony",
-        "artist":"Beethoven",
-        "album":"Composed between 1804 and 1808",
-        "video":"https://www.youtube.com/watch?v=_4IRMYuE1hI&list=PL68AC80CBF3649BBB",
-        "category": "Classical Music"
+        "name":"Ultra Music Festival Miami 2022",
+        "artist":"Vini Vici",
+        "album":"Ultra Music Festival Miami 2022",
+        "video":"https://youtu.be/krpKMrJ8GjI",
+        "category": "Party"
+    },
+    {
+        "name":"Back in the day",
+        "artist":"Brett Michaels",
+        "album":"Road Trip Anthem",
+        "video":"https://youtu.be/-h44oB6pjU0",
+        "category": "Road Trip"
+    },
+    {
+        "name":"We are going to the beach",
+        "artist":"Scratch Garden",
+        "album":"Scratch Garden",
+        "video":"https://youtu.be/vEZkJhoUI5w",
+        "category": "Kids"
     }
 ]
