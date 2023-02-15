@@ -1,6 +1,6 @@
 # MMPG
 
-  [GitHub Repository]()
+  [GitHub Repository](https://github.com/NewDev2298/music-player-app)
 
   [Deployed Site]()
 
