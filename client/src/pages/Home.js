@@ -7,7 +7,6 @@ import { QUERY_USERS, SEARCH_USERS } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
 import { Link } from 'react-router-dom';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_USERS);
@@ -76,7 +75,7 @@ const Home = () => {
                   <h5 className='card-title'>Woke up feeling wild?</h5>
                   <h6 className='card-subtitle text-muted'>Metallica, Tom Petty, Wiskey Myers...</h6>
                 </div>
-                <img src='../assets/rock.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/rock.png' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Let's Rock on!
@@ -95,7 +94,7 @@ const Home = () => {
                   <h5 className='card-title'>Appreciate the little things in life.</h5>
                   <h6 className='card-subtitle text-muted'>Zack Bryan, Tyler Childers, Colter Wall...</h6>
                 </div>
-                <img src='../assets/country.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/country.png' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Transport yourself to a country road with this relaxing playlist.</p>
@@ -113,7 +112,7 @@ const Home = () => {
                   <h5 className='card-title'>Celebrate another great day!</h5>
                   <h6 className='card-subtitle text-muted'>Dua Lipa, The Weekend...</h6>
                 </div>
-                <img src='../assets/party.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/party.png' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Let's get loud, it's party time!</p>
@@ -131,7 +130,7 @@ const Home = () => {
                   <h5 className='card-title'>Ready to hit the road?</h5>
                   <h6 className='card-subtitle text-muted'>Bruno Mars, Coldplay, Maroon 5...</h6>
                 </div>
-                <img src='../assets/road-trip.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/road-trip.png' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Songs that will make the time fly by.</p>
@@ -149,7 +148,7 @@ const Home = () => {
                   <h5 className='card-title'>Children's songs for every age.</h5>
                   <h6 className='card-subtitle text-muted'>Frozen, Beauty and the Beast...</h6>
                 </div>
-                <img src='../assets/kids.png' alt='Image placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                <img src='../assets/kids.png' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
                 </img>
                 <div className="card-body">
                   <p className="card-text">Click to know why we don't talk about Bruno.</p>
