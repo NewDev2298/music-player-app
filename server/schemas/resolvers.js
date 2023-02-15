@@ -39,11 +39,26 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    getSongsByCategory: async (_parent, args) => {
-      return await Songs.findById(args.category);
+    getAllCategories: async () => {
+      return await Category.find();
     },
     getAllSong: async () => {
       return await Songs.find();
+    },
+    getSongsByCategory: async (_parent, args) => {
+      const search = args.term;
+      const rgx = (pattern) => new RegExp(`.*${pattern}.*`);
+      const searchRgx = rgx(search);
+      return Songs.find({
+        $or: [
+          {
+            category: {
+              $regex: searchRgx,
+              $options: 'i',
+            },
+          },
+        ]
+      });
     },
   },
 

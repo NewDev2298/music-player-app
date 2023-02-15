@@ -22,9 +22,9 @@ const typeDefs = gql`
     category: String
   }
 
-  input CategoryInput {
-    id: ID
-    category: String
+  type Category {
+    _id: ID
+    name: String
   }
 
   type Query {
@@ -32,8 +32,9 @@ const typeDefs = gql`
     user(id: ID!): User
     searchUsers(term: String!): [User]!
     me: User
-    getSongsByCategory(input: CategoryInput): [Song]
+    getSongsByCategory(term: String!): [Song]!
     getAllSong: [Song]
+    getAllCategories: [Category]
   }
 
   type Mutation {
