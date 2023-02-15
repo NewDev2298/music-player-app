@@ -39,3 +39,41 @@ export const QUERY_ME = gql`
     }
   }
 `;
+export const QUERY_ALL_SONGS = gql`
+  query getAllSong {
+    getAllSong {
+      _id
+      album
+      artist
+      category
+      name
+      video
+    }
+  }
+`;
+export const QUERY_ALL_CATEGORIES = gql`
+  query getAllCategories {
+    getAllCategories {
+      _id
+      name
+      songs {
+        album
+        artist
+        name
+        video
+      }
+    }
+  }
+`;
+export const QUERY_A_CATEGORY = gql`
+  query getSongsByCategory($term: String!) {
+    getSongsByCategory(term: $term) {
+      _id
+      album
+      artist
+      category
+      name
+      video
+    }
+  }
+`;
