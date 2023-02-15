@@ -1,8 +1,8 @@
 # MMPG
 
-    GitHub Repository:
+  [GitHub Repository]()
 
-    Deployed Site:
+  [Deployed Site]()
 
 ## Description
 
@@ -48,12 +48,13 @@
 * Zoë Rorvig - [ZoeRorvig](https://github.com/ZoeRorvig)
 * Taz Lowry - [Deiontre10](https://github.com/Deiontre10)
 * Chris Bonime - [Cujion](https://github.com/Cujion)
+* Belen Gigante - [BelenGigante](https://github.com/BelenGigante)
 * Terrance Smith - [NewDev2298](https://github.com/NewDev2298)
 
 ## License
 * MIT License
 
-* Copyright (c) [2023]] [Zoë Rorvig, Taz Lowry, Chris Bonime, Terrance Smith]
+* Copyright (c) [2023]] [Zoë Rorvig, Taz Lowry, Chris Bonime, Belen Gigante, Terrance Smith]
 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
