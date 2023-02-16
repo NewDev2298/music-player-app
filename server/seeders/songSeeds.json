@@ -96,6 +96,15 @@
         "category": "Pop"
     },
     {
+        "name":"Hey Ya!",
+        "artist":"Outkast",
+        "cover":"Hey_Ya.png",
+        "album":"Speakerboxxx/The Love Below",
+        "video":"https://www.youtube.com/watch?v=PWgvGjAhvIw&ab_channel=OutkastVEVO",
+        "category": "Pop"
+    },
+    {
+
         "name":"In The End",
         "artist":"Linkin Park",
         "cover":"in-the-end.png",
@@ -161,7 +170,7 @@
     {
         "name":"Jamie",
         "artist":"Zach Bryan",
-        "cover":"jamie.png",
+        "cover":"jamie.jpg",
         "album":"Summertime Blues",
         "video":"https://youtu.be/iwm_hEv9k7g",
         "category": "Country"
@@ -231,7 +240,7 @@
     {
         "name":"You're Welcome",
         "artist":"Dwayne Johnson ",
-        "cover":"moana.png",
+        "cover":"moana.jpg",
         "album":"Moana",
         "video":"https://youtu.be/79DijItQXMM",
         "category": "Kids"
