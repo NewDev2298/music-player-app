@@ -29,11 +29,13 @@ mutation Mutation($songId: ID!) {
   saveSong(songID: $songId) {
     _id
     email
+    songCount
     username
     songList {
       _id
       album
       artist
+      cover
       category
       name
       video
@@ -52,6 +54,7 @@ mutation Mutation($songId: ID!) {
       _id
       album
       category
+      cover
       artist
       name
       video

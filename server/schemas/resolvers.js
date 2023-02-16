@@ -10,7 +10,7 @@ const resolvers = {
       const search = args.term;
       const rgx = (pattern) => new RegExp(`.*${pattern}.*`);
       const searchRgx = rgx(search);
-      return User.find({
+      return await User.find({
         $or: [
           {
             email: {
@@ -28,14 +28,14 @@ const resolvers = {
       });
     },
     users: async () => {
-      return User.find().populate("songList");
+      return await User.find().populate("songList");
     },
     user: async (_, args) => {
-      return User.findOne({ _id: args.id }).populate("songList");
+      return await User.findOne({ _id: args.id }).populate("songList");
     },
     me: async (_, _args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id }).populate("songList");
+        return await User.findOne({ _id: context.user._id }).populate("songList");
       }
       throw new AuthenticationError('You need to be logged in!');
     },
@@ -49,7 +49,7 @@ const resolvers = {
       const search = args.term;
       const rgx = (pattern) => new RegExp(`.*${pattern}.*`);
       const searchRgx = rgx(search);
-      return Songs.find({
+      return await Songs.find({
         $or: [
           {
             category: {
@@ -90,7 +90,7 @@ const resolvers = {
         const updatedUser = await User.findOneAndUpdate(
           { _id: context.user._id },
           { $addToSet: { songList: songID } },
-          { new: true, runValidators: true }
+          { new: true }
         );
         return updatedUser;
       }
@@ -102,7 +102,7 @@ const resolvers = {
         const updatedUser = await User.findOneAndUpdate(
           { _id: context.user._id },
           { $pull: { songList: songID } },
-          { new: true, runValidators: true }
+          { new: true }
         );
         return updatedUser;
       }
