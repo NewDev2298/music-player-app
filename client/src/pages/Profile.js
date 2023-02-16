@@ -1,10 +1,11 @@
 // Node Modules
 import React, { useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from "@apollo/client";
 // Utilities
 import Auth from '../utils/auth';
 import { QUERY_USERS, QUERY_USER, QUERY_ME } from '../utils/queries';
+import { REMOVE_SONG } from '../utils/mutations';
 // Components
 import UserList from '../components/UserList';
 
@@ -15,6 +16,7 @@ const Profile = () => {
   const { loading, data, error } = useQuery(QUERY_ME);
   const [favorites, setFavorites] = useState([]);
 
+  const [removeSong] = useMutation(REMOVE_SONG);
 
   // Get current user
   // const { loading, data, error } = useQuery(id ? QUERY_USER : QUERY_ME, {
@@ -82,6 +84,10 @@ const Profile = () => {
     });
   };
 
+  const handleRemove = async (id) => {
+    await removeSong({ variables: { songId: id } }); // Making card text disappear 
+  };
+
   const songs = user.songList;
 
   return (
@@ -105,7 +111,7 @@ const Profile = () => {
             </div>
             <div className="card-body d-flex  ">
               <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
-              <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => handleClick(song._id)}>
+              <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => {handleClick(song._id); handleRemove(song._id);}}>
                 {favorites.includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
               </button>
             </div>
