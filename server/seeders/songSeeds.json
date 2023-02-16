@@ -8,6 +8,46 @@
         "category": "Party"
     },
     {
+        "name":"Dance Again",
+        "artist":"Jennifer Lopez ft. Pitbull",
+        "cover":"danceagain.png",
+        "album":"The Hits",
+        "video":"https://youtu.be/bjgFH01k0gU",
+        "category": "Party"
+    },
+    {
+        "name":"I Gotta Feeling",
+        "artist":"The Black Eyed Peas",
+        "cover":"igottafeeling.png",
+        "album":"I Gotta Feeling",
+        "video":"https://youtu.be/uSD4vsh1zDA",
+        "category": "Party"
+    },
+    {
+        "name":"Me Too",
+        "artist":"Meghan Trainor",
+        "cover":"metoo.png",
+        "album":"Me Too",
+        "video":"https://youtu.be/qDRORgoZxZU",
+        "category": "Party"
+    },
+    {
+        "name":"Yo Perreo Sola",
+        "artist":"Bad Bunny",
+        "cover":"badbunny.png",
+        "album":"YHLQMDLG",
+        "video":"https://youtu.be/GtSRKwDCaZM",
+        "category": "Party"
+    },
+    {
+        "name":"Music Sessions #53",
+        "artist":"SHAKIRA || BZRP",
+        "cover":"shakira.png",
+        "album":"Single Music Sessions #53",
+        "video":"https://youtu.be/CocEMWdc7Ck",
+        "category": "Party"
+    },
+    {
         "name":"Dynamite",
         "artist":"BTS",
         "cover":"Dynamite.png",
@@ -64,6 +104,7 @@
         "category": "Pop"
     },
     {
+
         "name":"In The End",
         "artist":"Linkin Park",
         "cover":"in-the-end.png",
