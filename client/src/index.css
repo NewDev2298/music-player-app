@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 html,
 * {
@@ -9,7 +9,7 @@ html,
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Kalam', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -45,14 +45,14 @@ const Category = () => {
   }
 
   const handleSave = async (id) => {
-    await saveSong({ 
-      variables: { songId: id }, 
+    await saveSong({
+      variables: { songId: id },
     });
     await refetch();
   };
 
   const handleRemove = async (id) => {
-    await removeSong({ 
+    await removeSong({
       variables: { songId: id },
     });
     await refetch();
@@ -63,7 +63,7 @@ const Category = () => {
       <h2 className='text-center mb-3'>
         Viewing {term} Category Songs
       </h2>
-      <div className="row">
+      <div className="row d-flex justify-content-center">
         {songs.map((song) => (
             <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
               <h3 className='card-header'>{song.name}</h3>
@@ -78,8 +78,8 @@ const Category = () => {
               </div>
               <div className="card-body d-flex  ">
                 <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
-                <button 
-                  style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} 
+                <button
+                  style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }}
                   onClick={
                     () => user.songList.map(song => song._id).includes(song._id) ? handleRemove(song._id) : handleSave(song._id)
                   }>
@@ -89,8 +89,7 @@ const Category = () => {
             </div>
         ))}
       </div>
-    </div >
-  );
+    </div>);
 };
 
 export default Category;
