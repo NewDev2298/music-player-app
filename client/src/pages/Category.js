@@ -87,7 +87,21 @@ const Category = () => {
                             </button>
                         </div>
                     </div>
-                ))}
+                    <img src={`${process.env.PUBLIC_URL}/assets/${song.cover}`} className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                    
+                    </img>
+                    <div className="card-body">
+                        <p className="card-text text-center">Album: {song.album}
+                        </p>
+                    </div>
+                    <div className="card-body d-flex  ">
+                        <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
+                        <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => handleClick(song._id)}>
+                            {favorites.includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
+                        </button>
+                    </div>
+                </div>
+            ))}
             </div>
         </div >
     );

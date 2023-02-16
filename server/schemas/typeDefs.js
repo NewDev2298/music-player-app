@@ -19,6 +19,7 @@ const typeDefs = gql`
     _id: ID
     name: String
     artist: String
+    cover: String
     album: String
     video: String
     category: String
