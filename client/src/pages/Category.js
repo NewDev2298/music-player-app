@@ -63,12 +63,8 @@ const Category = () => {
       <h2 className='text-center mb-3'>
         Viewing {term} Category Songs
       </h2>
-      <div className="row">
-        <div>
-          <pre>{JSON.stringify(songs, null, 2)}</pre>
-        </div>
+      <div className="row d-flex justify-content-center">
         {songs.map((song) => (
-          <div>
             <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
               <h3 className='card-header'>{song.name}</h3>
               <div className='card-body'>
@@ -91,7 +87,6 @@ const Category = () => {
                 </button>
               </div>
             </div>
-          </div>
         ))}
       </div>
     </div>);
