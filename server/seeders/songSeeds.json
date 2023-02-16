@@ -8,8 +8,40 @@
         "category": "Party"
     },
     {
+        "name":"Dynamite",
+        "artist":"BTS",
+        "cover":"",
+        "album":"Dynamite Single",
+        "video":"https://music.youtube.com/watch?v=gdZLi9oWNZg&feature=share",
+        "category": "Pop"
+    },
+    {
+        "name":"Blinding Lights",
+        "artist":"The Weeknd",
+        "cover":"",
+        "album":"Blinding Lights",
+        "video":"https://youtu.be/4NRXx6U8ABQ",
+        "category": "Pop"
+    },
+    {
+        "name":"Unstoppable",
+        "artist":"Sia",
+        "cover":"",
+        "album":"This is acting",
+        "video":"https://youtu.be/YaEG2aWJnZ8",
+        "category": "Pop"
+    },   {
+        "name":"Umbrella",
+        "artist":"Rihana ft The Chainsmokers",
+        "cover":"",
+        "album":"Umbrella",
+        "video":"https://youtu.be/7B5vUO751Rg",
+        "category": "Pop"
+    },
+    {
         "name":"Flowers",
         "artist":"Miley Cyrus",
+        "cover":"flowers.png",
         "album":"Endless Summer Vacation",
         "video":"https://www.youtube.com/watch?v=G7KNmW9a75Y&list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU",
         "category": "Pop"
@@ -17,6 +49,7 @@
     {
         "name":"A Thousand Miles",
         "artist":"Vanessa Carlton",
+        "cover":"1000-miles.png",
         "album":"Be Not Nobody",
         "video":"https://www.youtube.com/watch?v=Cwkej79U3ek&ab_channel=VanessaCarltonVEVOw",
         "category": "Pop"
@@ -24,6 +57,7 @@
     {
         "name":"Hey Ya!",
         "artist":"Outkast",
+        "cover":"hey-ya.png",
         "album":"Speakerboxxx/The Love Below",
         "video":"https://www.youtube.com/watch?v=PWgvGjAhvIw&ab_channel=OutkastVEVO",
         "category": "Pop"
@@ -31,13 +65,38 @@
     {
         "name":"In The End",
         "artist":"Linkin Park",
+        "cover":"in-the-end.png",
         "album":"Hybrid Theory",
         "video":"https://www.youtube.com/watch?v=eVTXPUF4Oz4&ab_channel=LinkinPark",
         "category": "Rock"
     },
     {
+        "name":"Gasoline",
+        "artist":"Whiskey Myers",
+        "cover":"",
+        "album":"Gasoline Single",
+        "video":"https://youtu.be/_0qsO_fVSwY",
+        "category": "Rock"
+    },
+    {
+        "name":"Everlong",
+        "artist":"Foo Fighters",
+        "cover":"",
+        "album":"Everlong",
+        "video":"https://youtu.be/eBG7P-K-r1Y",
+        "category": "Rock"
+    },{
+        "name":"Scar Tissue",
+        "artist":"Red Hot Chili Peppers",
+        "cover":"",
+        "album":"Scar Tissue",
+        "video":"https://youtu.be/mzJj5-lubeM",
+        "category": "Rock"
+    },
+    {
         "name":"Thunderstruck",
         "artist":"AC/DC",
+        "cover":"thunderstruck.png",
         "album":"The Razors Edge",
         "video":"https://www.youtube.com/watch?v=v2AC41dglnM&list=PL11bOJGTrscPf0RmkzYPbLDGqRrndVEKN",
         "category": "Rock"
@@ -45,13 +104,39 @@
     {
         "name":"My Next Thirty Years",
         "artist":"Tim McGraw",
+        "cover":"next_30years.png",
         "album":"A Place in the Sun",
         "video":"https://www.youtube.com/watch?v=fY6L7YMkVhA",
         "category": "Country"
     },
     {
+        "name":"In Case You Didn't Know",
+        "artist":"Brett Young",
+        "cover":"",
+        "album":"In Case You Didn't Know",
+        "video":"https://youtu.be/7qaHdHpSjX8",
+        "category": "Country"
+    },
+    {
+        "name":"Beautiful Crazy",
+        "artist":"Luke Combs",
+        "cover":"",
+        "album":"Beautiful Crazy",
+        "video":"https://youtu.be/rItv9i6c7AY",
+        "category": "Country"
+    },
+    {
+        "name":"Jamie",
+        "artist":"Zach Bryan",
+        "cover":"",
+        "album":"Summertime Blues",
+        "video":"https://youtu.be/iwm_hEv9k7g",
+        "category": "Country"
+    },
+    {
         "name":"The Bones",
         "artist":"Maren Morris",
+        "cover":"the-bones.png",
         "album":"Girl",
         "video":"https://www.youtube.com/watch?v=gvPMVKUI9go&list=PLEEyQEShYtdWTyn36cnmbN3obf_f4huaE",
         "category": "Country"
@@ -59,20 +144,76 @@
     {
         "name":"Back in the day",
         "artist":"Brett Michaels",
+        "cover":"back-in-the-day.png",
         "album":"Road Trip Anthem",
         "video":"https://youtu.be/-h44oB6pjU0",
         "category": "Road-Trip"
     },
     {
+        "name":"Road Tripping",
+        "artist":"Red Hot Chili Peppers",
+        "cover":"",
+        "album":"Road Tripping",
+        "video":"https://youtu.be/11GYvfYjyV0",
+        "category": "Road-Trip"
+    },
+    {
+        "name":"Like a Stone",
+        "artist":"Audioslave",
+        "cover":"",
+        "album":"Like a Stone",
+        "video":"https://youtu.be/7QU1nvuxaMA",
+        "category": "Road-Trip"
+    },  {
+        "name":"The Man Who Sold The World",
+        "artist":"Nirvana",
+        "cover":"",
+        "album":"The Man Who Sold The World",
+        "video":"https://youtu.be/fregObNcHC8",
+        "category": "Road-Trip"
+    },  {
+        "name":"Somebody That I Used To Know",
+        "artist":"Gotye",
+        "cover":"",
+        "album":"Somebody That I Used To Know",
+        "video":"https://youtu.be/8UVNT4wvIGY",
+        "category": "Road-Trip"
+    },
+    {
         "name":"Baby Shark",
         "artist":"Pinkfong",
+        "cover":"babt-shark.png",
         "album":"Baby Shark",
         "video":"https://www.youtube.com/watch?v=R93ce4FZGbc",
         "category": "Kids"
     },
     {
+        "name":"Bear Hunt",
+        "artist":"The Kiboomers ",
+        "cover":"",
+        "album":"Preschool Songs for Circle Time",
+        "video":"https://youtu.be/5_ShP3fiEhU",
+        "category": "Kids"
+    },
+    {
+        "name":"You're Welcome",
+        "artist":"Dwayne Johnson ",
+        "cover":"",
+        "album":"Moana",
+        "video":"https://youtu.be/79DijItQXMM",
+        "category": "Kids"
+    },{
+        "name":"Five Little Monkeys",
+        "artist":"Flickbox Kids Songs",
+        "cover":"",
+        "album":"Children Nursery Rhyme",
+        "video":"https://youtu.be/b0NHrFNZWh0",
+        "category": "Kids"
+    },
+    {
         "name":"We are going to the beach",
         "artist":"Scratch Garden",
+        "cover":"going-to-the-beach.png",
         "album":"Scratch Garden",
         "video":"https://youtu.be/vEZkJhoUI5w",
         "category": "Kids"

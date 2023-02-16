@@ -67,7 +67,8 @@ const Category = () => {
                         <h5 className='card-title text-center'>Artist: {song.artist}</h5>
                         <h6 className='card-subtitle text-muted text-end'>{song.category}</h6>
                     </div>
-                    <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                    <img src={`${process.env.PUBLIC_URL}/assets/${song.cover}`} className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+                    
                     </img>
                     <div className="card-body">
                         <p className="card-text text-center">Album: {song.album}
