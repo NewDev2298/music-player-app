@@ -12,6 +12,7 @@ export const QUERY_USERS = gql`
       _id
       album
       artist
+      cover
       category
       name
       video
@@ -41,6 +42,7 @@ export const QUERY_USER = gql`
       _id
       album
       artist
+      cover
       category
       video
       name
@@ -59,6 +61,7 @@ query Me {
       _id
       album
       artist
+      cover
       category
       name
       video
@@ -75,6 +78,7 @@ export const QUERY_ALL_SONGS = gql`
       _id
       album
       artist
+      cover
       category
       name
       video
@@ -97,6 +101,7 @@ query GetSongsByCategory($term: String!) {
     _id
     album
     artist
+    cover
     category
     name
     video

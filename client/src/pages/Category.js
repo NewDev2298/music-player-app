@@ -75,7 +75,7 @@ const Category = () => {
                 <h5 className='card-title text-center'>Artist: {song.artist}</h5>
                 <h6 className='card-subtitle text-muted text-end'>{song.category}</h6>
               </div>
-              <img src='https://via.placeholder.com/150' alt='placeholder' className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
+              <img src={`${process.env.PUBLIC_URL}/assets/${song.cover}`} className='img-fluid' width='100%' height='200' alt={song.name} />
               </img>
               <div className="card-body">
                 <p className="card-text text-center">Album: {song.album}
@@ -92,25 +92,6 @@ const Category = () => {
                 </button>
               </div>
             </div>
-            <img src={`${process.env.PUBLIC_URL}/assets/${song.cover}`} className='d-block user-select-none' width='100%' height='200' aria-label='Placeholder: Image Cap'>
-
-            </img>
-            <div className="card-body">
-              <p className="card-text text-center">Album: {song.album}
-              </p>
-            </div>
-            <div className="card-body d-flex  ">
-              <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
-              <button 
-                style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} 
-                onClick={
-                  () => user.songList.map(song => song._id).includes(song._id) ? handleRemove(song._id) : handleSave(song._id)
-                }
-              >
-                {user.songList.map(song => song._id).includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
-              </button>
-            </div>
-          </div>
         ))}
       </div>
     </div >

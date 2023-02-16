@@ -1,4 +1,7 @@
-html, * {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,10 +9,11 @@ html, * {
 
 body {
   margin: 0;
-  font-family: "Raleway", serif !important;
+  font-family: 'Roboto', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 /* .categoryImg{
   width: 500px !important;
   height: 500px !important;
