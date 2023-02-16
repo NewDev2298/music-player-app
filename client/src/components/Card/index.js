@@ -6,18 +6,18 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ALL_SONGS } from '../../utils/queries';
 
 
-const Card = () => {
+const Card = (songs) => {
     
     const { id } = useParams();
 
     const [favorites, setFavorites] = useState([]);
 
-    const { loading, data, error } = useQuery(QUERY_ALL_SONGS,
-        {
-            variables: { id },
-        });
+    // const { loading, data, error } = useQuery(QUERY_ALL_SONGS,
+    //     {
+    //         variables: { id },
+    //     });
 
-    const songs = data?.getAllSong || [];
+    // const songs = data?.getAllSong || [];
 
     const handleClick = (id) => {
         setFavorites(favorites => {
@@ -29,12 +29,10 @@ const Card = () => {
     };
 
     return (
-        
-
         <div className="row">
         {songs.map((song) => (
             <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
-                <h3 className='card-header'>{song.name}</h3>
+                <h3 className='card-header'>{songs.name}</h3>
                 <div className='card-body'>
                     <h5 className='card-title text-center'>Artist: {song.artist}</h5>
                     <h6 className='card-subtitle text-muted text-end'>{song.category}</h6>
@@ -54,8 +52,6 @@ const Card = () => {
             </div>
         ))}
         </div>
-
-        
     );
 };
 

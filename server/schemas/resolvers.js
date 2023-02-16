@@ -35,7 +35,7 @@ const resolvers = {
     },
     me: async (_, _args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id });
+        return User.findOne({ _id: context.user._id }).populate("songList");
       }
       throw new AuthenticationError('You need to be logged in!');
     },
@@ -87,15 +87,27 @@ const resolvers = {
     },
     saveSong: async (_parent, { songID }, context) => {
       if (context.user) {
-          const updatedUser = await User.findOneAndUpdate(
-              { _id: context.user._id },
-              { $addToSet: { songList: songID } },
-              { new: true, runValidators: true }
-          );
-          return updatedUser;
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { songList: songID } },
+          { new: true, runValidators: true }
+        );
+        return updatedUser;
       }
       throw new AuthenticationError('You need to be logged in!');
-  },
+    },
+    
+    removeSong: async (_parent, { songID }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { songList: songID } },
+          { new: true, runValidators: true }
+        );
+        return updatedUser;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
   }
 };
 

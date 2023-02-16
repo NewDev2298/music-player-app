@@ -23,3 +23,40 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const SAVE_SONG = gql`
+mutation Mutation($songId: ID!) {
+  saveSong(songID: $songId) {
+    _id
+    email
+    username
+    songList {
+      _id
+      album
+      artist
+      category
+      name
+      video
+    }
+  }
+}
+`;
+
+export const REMOVE_SONG = gql`
+mutation Mutation($songId: ID!) {
+  removeSong(songID: $songId) {
+    _id
+    email
+    songCount
+    songList {
+      _id
+      album
+      category
+      artist
+      name
+      video
+    }
+    username
+  }
+}
+`;
