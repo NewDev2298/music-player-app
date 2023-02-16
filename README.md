@@ -13,6 +13,8 @@
 
   [Visuals](#visuals)
 
+  [Demo](#demo)
+
   [Installation](#installation)
 
   [Usage](#usage)
@@ -25,6 +27,25 @@
 
 ## Visuals
 
+### User friendly navigation bar
+
+![Navigation](./navbar.png)
+
+### Homepage - Category Menu
+
+![home](./categories.png)
+
+### Category
+
+![pop](./pop.png)
+
+### User Profile (saved music)
+
+![profile](./profile.png)
+
+## Demo
+
+[Demo Video](./melum.webm)
 
 ## Installation 
   
