@@ -63,8 +63,10 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="card-body d-flex justify-content-center">
+                <Link to={`/categories/Pop`}>
                   <button className="btn btn-lg btn-info mx-2 my-1" type="submit">View Songs
                   </button>
+                  </Link>
                 </div>
               </div>
               <div className='col-lg-3 col-md-5 col-sm-12 mx-1 card border-info mb-3'>
@@ -98,8 +100,10 @@ const Home = () => {
                   <p className="card-text">Transport yourself to a country road with this relaxing playlist.</p>
                 </div>
                 <div className="card-body d-flex justify-content-center">
+                <Link to={`/categories/Country`}>
                   <button className="btn btn-lg btn-info mx-2 my-1" type="submit">View Songs
                   </button>
+                  </Link>
                 </div>
               </div>
               <div className='col-lg-3 col-md-5 col-sm-12 mx-1 card border-info mb-3'>
@@ -114,8 +118,10 @@ const Home = () => {
                   <p className="card-text">Let's get loud, it's party time!</p>
                 </div>
                 <div className="card-body d-flex justify-content-center">
+                <Link to={`/categories/Party`}>
                   <button className="btn btn-lg btn-info mx-2 my-1" type="submit">View Songs
                   </button>
+                  </Link>
                 </div>
               </div>
               <div className='col-lg-3 col-md-5 col-sm-12 mx-1 card border-info mb-3'>
@@ -130,8 +136,10 @@ const Home = () => {
                   <p className="card-text">Songs that will make the time fly by.</p>
                 </div>
                 <div className="card-body d-flex justify-content-center">
+                <Link to={`/categories/Road-Trip`}>
                   <button className="btn btn-lg btn-info mx-2 my-1" type="submit">View Songs
                   </button>
+                  </Link>
                 </div>
               </div>
               <div className='col-lg-3 col-md-5 col-sm-12 mx-1 card border-info mb-3'>
@@ -146,8 +154,10 @@ const Home = () => {
                   <p className="card-text">Click to know why we don't talk about Bruno.</p>
                 </div>
                 <div className="card-body d-flex justify-content-center">
+                <Link to={`/categories/Kids`}>
                   <button className="btn btn-lg btn-info mx-2 my-1" type="submit">View Songs
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

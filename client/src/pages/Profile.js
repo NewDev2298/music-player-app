@@ -1,22 +1,22 @@
 // Node Modules
-import React, { useState } from 'react';
+import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery, useMutation } from "@apollo/client";
 // Utilities
 import Auth from '../utils/auth';
-import { QUERY_USERS, QUERY_USER, QUERY_ME } from '../utils/queries';
-import { REMOVE_SONG } from '../utils/mutations';
+import { QUERY_ME } from '../utils/queries';
+import { REMOVE_SONG, SAVE_SONG } from '../utils/mutations';
 // Components
-import UserList from '../components/UserList';
+// import UserList from '../components/UserList';
 
 import { AiFillYoutube, AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 const Profile = () => {
   const { id } = useParams();
-  const { loading, data, error } = useQuery(QUERY_ME);
-  const [favorites, setFavorites] = useState([]);
+  const { loading, data, error, refetch } = useQuery(QUERY_ME);
 
   const [removeSong] = useMutation(REMOVE_SONG);
+  const [saveSong] = useMutation(SAVE_SONG);
 
   // Get current user
   // const { loading, data, error } = useQuery(id ? QUERY_USER : QUERY_ME, {
@@ -75,17 +75,14 @@ const Profile = () => {
   // }
 
 
-  const handleClick = (id) => {
-    setFavorites(favorites => {
-      if (favorites.includes(id)) {
-        return favorites.filter(fav => fav !== id);
-      }
-      return [...favorites, id];
-    });
+  const handleSave = async (id) => {
+    await saveSong({ variables: { songId: id } });
+    await refetch();
   };
 
   const handleRemove = async (id) => {
     await removeSong({ variables: { songId: id } }); // Making card text disappear 
+    await refetch();
   };
 
   const songs = user.songList;
@@ -111,8 +108,13 @@ const Profile = () => {
             </div>
             <div className="card-body d-flex  ">
               <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
-              <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => {handleClick(song._id); handleRemove(song._id);}}>
-                {favorites.includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
+              <button 
+                style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} 
+                onClick={
+                  () => user.songList.map(song => song._id).includes(song._id) ? handleRemove(song._id) : handleSave(song._id)
+                }
+              >
+                {user.songList.map(song => song._id).includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
               </button>
             </div>
           </div>
