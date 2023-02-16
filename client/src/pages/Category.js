@@ -64,11 +64,7 @@ const Category = () => {
         Viewing {term} Category Songs
       </h2>
       <div className="row">
-        <div>
-          <pre>{JSON.stringify(songs, null, 2)}</pre>
-        </div>
         {songs.map((song) => (
-          <div>
             <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
               <h3 className='card-header'>{song.name}</h3>
               <div className='card-body'>
@@ -76,7 +72,6 @@ const Category = () => {
                 <h6 className='card-subtitle text-muted text-end'>{song.category}</h6>
               </div>
               <img src={`${process.env.PUBLIC_URL}/assets/${song.cover}`} className='img-fluid' width='100%' height='200' alt={song.name} />
-              </img>
               <div className="card-body">
                 <p className="card-text text-center">Album: {song.album}
                 </p>
