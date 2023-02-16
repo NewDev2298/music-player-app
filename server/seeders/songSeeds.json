@@ -10,7 +10,7 @@
     {
         "name":"Dynamite",
         "artist":"BTS",
-        "cover":"",
+        "cover":"Dinamite.png",
         "album":"Dynamite Single",
         "video":"https://music.youtube.com/watch?v=gdZLi9oWNZg&feature=share",
         "category": "Pop"
@@ -18,7 +18,7 @@
     {
         "name":"Blinding Lights",
         "artist":"The Weeknd",
-        "cover":"",
+        "cover":"blinding_lights.png",
         "album":"Blinding Lights",
         "video":"https://youtu.be/4NRXx6U8ABQ",
         "category": "Pop"
@@ -26,7 +26,7 @@
     {
         "name":"Unstoppable",
         "artist":"Sia",
-        "cover":"",
+        "cover":"unstoppable.png",
         "album":"This is acting",
         "video":"https://youtu.be/YaEG2aWJnZ8",
         "category": "Pop"
@@ -34,7 +34,7 @@
     {
         "name":"Umbrella",
         "artist":"Rihana ft The Chainsmokers",
-        "cover":"",
+        "cover":"umbrella.png",
         "album":"Umbrella",
         "video":"https://youtu.be/7B5vUO751Rg",
         "category": "Pop"
@@ -74,7 +74,7 @@
     {
         "name":"Gasoline",
         "artist":"Whiskey Myers",
-        "cover":"",
+        "cover":"gasoline.png",
         "album":"Gasoline Single",
         "video":"https://youtu.be/_0qsO_fVSwY",
         "category": "Rock"
@@ -82,14 +82,14 @@
     {
         "name":"Everlong",
         "artist":"Foo Fighters",
-        "cover":"",
+        "cover":"everlong.png",
         "album":"Everlong",
         "video":"https://youtu.be/eBG7P-K-r1Y",
         "category": "Rock"
     },{
         "name":"Scar Tissue",
         "artist":"Red Hot Chili Peppers",
-        "cover":"",
+        "cover":"scartissue",
         "album":"Scar Tissue",
         "video":"https://youtu.be/mzJj5-lubeM",
         "category": "Rock"
@@ -113,7 +113,7 @@
     {
         "name":"In Case You Didn't Know",
         "artist":"Brett Young",
-        "cover":"",
+        "cover":"brett-young.png",
         "album":"In Case You Didn't Know",
         "video":"https://youtu.be/7qaHdHpSjX8",
         "category": "Country"
@@ -121,7 +121,7 @@
     {
         "name":"Beautiful Crazy",
         "artist":"Luke Combs",
-        "cover":"",
+        "cover":"beautiful_crazy.png",
         "album":"Beautiful Crazy",
         "video":"https://youtu.be/rItv9i6c7AY",
         "category": "Country"
@@ -129,7 +129,7 @@
     {
         "name":"Jamie",
         "artist":"Zach Bryan",
-        "cover":"",
+        "cover":"jamie.png",
         "album":"Summertime Blues",
         "video":"https://youtu.be/iwm_hEv9k7g",
         "category": "Country"
@@ -153,7 +153,7 @@
     {
         "name":"Road Tripping",
         "artist":"Red Hot Chili Peppers",
-        "cover":"",
+        "cover":"roadtripping.png",
         "album":"Road Tripping",
         "video":"https://youtu.be/11GYvfYjyV0",
         "category": "Road-Trip"
@@ -161,21 +161,21 @@
     {
         "name":"Like a Stone",
         "artist":"Audioslave",
-        "cover":"",
+        "cover":"audioslave.png",
         "album":"Like a Stone",
         "video":"https://youtu.be/7QU1nvuxaMA",
         "category": "Road-Trip"
     },  {
         "name":"The Man Who Sold The World",
         "artist":"Nirvana",
-        "cover":"",
+        "cover":"nirvana.png",
         "album":"The Man Who Sold The World",
         "video":"https://youtu.be/fregObNcHC8",
         "category": "Road-Trip"
     },  {
         "name":"Somebody That I Used To Know",
         "artist":"Gotye",
-        "cover":"",
+        "cover":"gotye.png",
         "album":"Somebody That I Used To Know",
         "video":"https://youtu.be/8UVNT4wvIGY",
         "category": "Road-Trip"
@@ -191,7 +191,7 @@
     {
         "name":"Bear Hunt",
         "artist":"The Kiboomers ",
-        "cover":"",
+        "cover":"bearhunt.png",
         "album":"Preschool Songs for Circle Time",
         "video":"https://youtu.be/5_ShP3fiEhU",
         "category": "Kids"
@@ -199,14 +199,14 @@
     {
         "name":"You're Welcome",
         "artist":"Dwayne Johnson ",
-        "cover":"",
+        "cover":"moana.png",
         "album":"Moana",
         "video":"https://youtu.be/79DijItQXMM",
         "category": "Kids"
     },{
         "name":"Five Little Monkeys",
         "artist":"Flickbox Kids Songs",
-        "cover":"",
+        "cover":"five-little-monkeys.png",
         "album":"Children Nursery Rhyme",
         "video":"https://youtu.be/b0NHrFNZWh0",
         "category": "Kids"
