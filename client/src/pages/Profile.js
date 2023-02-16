@@ -89,10 +89,10 @@ const Profile = () => {
 
   return (
     <div className='container min-vh-100'>
-      <h2 className='text-center mb-4'>
+      <h2 className='text-center mb-3'>
         Viewing {id ? `${user.username}'s` : 'Your'} Favorite Songs
       </h2>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center mx-1">
         {songs.map((song) => (
           <div className='col-lg-3 col-md-6 col-sm-12 mx-1 card border-info mb-3'>
             <h3 className='card-header'>{song.name}</h3>
@@ -102,7 +102,7 @@ const Profile = () => {
             </div>
             <img src={`${process.env.PUBLIC_URL}/assets/${song.cover}`} className='img-fluid' width='100%' height='200' alt={song.name} />
             <div className="card-body">
-              <p className="card-text text-center">Album: {song.album}
+              <p className="card-text text-center" style={{ fontWeight: "100"}}>Album: {song.album}
               </p>
             </div>
             <div className="card-body d-flex  ">
