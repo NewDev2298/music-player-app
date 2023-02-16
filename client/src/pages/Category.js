@@ -48,14 +48,16 @@ const Category = () => {
         );
     }
 
-    const handleClick = async (id) => {
+    const handleClick = (id) => {
        setFavorites(favorites => {
             if (favorites.includes(id)) {
                 return favorites.filter(fav => fav !== id);
             }
             return [...favorites, id];
         });
+    };
 
+    const handleSave = async (id) => {
         await saveSong({ variables: { songId: id } }); // Making card text disappear 
     };
 
@@ -80,7 +82,7 @@ const Category = () => {
                         </div>
                         <div className="card-body d-flex  ">
                             <a href={song.video} className="card-link me-auto" target="_blank" rel="noreferrer" style={{ fontSize: "48px", margin: "0", padding: "0", color: "red" }}><AiFillYoutube /></a>
-                            <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => handleClick(song._id)}>
+                            <button style={{ fontSize: "48px", margin: "0", padding: "0", color: "red", border: '0', background: 'none' }} onClick={() => {handleClick(song._id); handleSave(song._id);}}>
                                 {favorites.includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
                             </button>
                         </div>
