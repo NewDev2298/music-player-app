@@ -1,4 +1,4 @@
-# MMPG
+# Melum
 
   [GitHub Repository](https://github.com/NewDev2298/music-player-app)
 
@@ -7,7 +7,7 @@
 ## Description
 
 
-
+    This application was construted using a number of frameworks, including: React, MongoDB, Mongoose ODM, GraphQL, Node.js, Express.js. Melum uses Bootstrap/Bootswatch for much of the application's visual styling.  
 
 ## Table of Contents
 
