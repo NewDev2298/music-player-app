@@ -113,7 +113,7 @@ const Profile = () => {
                   () => user.songList.map(song => song._id).includes(song._id) ? handleRemove(song._id) : handleSave(song._id)
                 }
               >
-                {user.songList.map(song => song._id).includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
+                {user?.songList?.length && user.songList.map(song => song._id).includes(song._id) ? <AiFillHeart /> : <AiOutlineHeart />}
               </button>
             </div>
           </div>
