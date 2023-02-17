@@ -7,7 +7,7 @@
 ## Description
 
 
-    This application was construted using a number of frameworks, including: React, MongoDB, Mongoose ODM, GraphQL, Node.js, Express.js. Melum uses Bootstrap/Bootswatch for much of the application's visual styling.  
+    This application was constructed using a number of frameworks, including: React, MongoDB, Mongoose ODM, GraphQL, Node.js, Express.js. Melum uses Bootstrap/Bootswatch for much of the application's visual styling.  
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@
 
   [Contributing](#contributing)
 
-  [Authors & Acknowledgement](#authors-&-acknowledgment)
+  [Authors](#authors)
 
   [License](#license)
 
@@ -29,23 +29,25 @@
 
 ### User friendly navigation bar
 
-![Navigation](./navbar.png)
+![Navigation](./images/navbar.png)
 
 ### Homepage - Category Menu
 
-![home](./categories.png)
+![home](./images/categories.png)
 
 ### Category
 
-![pop](./pop.png)
+![pop](./images/pop.png)
 
 ### User Profile (saved music)
 
-![profile](./profile.png)
+![profile](./images/profile.png)
 
 ## Demo
 
-[Demo Video](./melum.webm)
+[Demo Video](./images/melum.webm)
+
+![gif](./images/Melum.gif)
 
 ## Installation 
   
@@ -61,7 +63,7 @@
 
     Please make sure to update tests as appropriate. 
 
-## Authors & Acknowledgement
+## Authors
 
     For any questions please feel free to reach out through the accounts listed below:
 
