@@ -2,7 +2,7 @@
 
   [GitHub Repository](https://github.com/NewDev2298/music-player-app)
 
-  [Deployed Site]()
+  [Deployed Site](https://fierce-caverns-99507.herokuapp.com/)
 
 ## Description
 
